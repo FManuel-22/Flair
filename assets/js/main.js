@@ -162,21 +162,3 @@ sr.reveal(
     origin: "bottom",
   }
 );
-
-
-function sendEmail() {
-  var name = document.getElementById("name").value;
-  var email = document.getElementById("email").value;
-  var message = document.getElementById("message").value;
-
-  // Use XMLHttpRequest to send the email
-  var xhr = new XMLHttpRequest();
-  xhr.open("POST", "sendemail.php", true);
-  xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-  xhr.onreadystatechange = function() {
-    if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
-      alert("Email sent successfully");
-    }
-  };
-  xhr.send("name=" + name + "email=" + email + "&message=" + message);
-}
