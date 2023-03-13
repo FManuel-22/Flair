@@ -396,7 +396,7 @@ body {
 }
 
 .bout__img {
-  align-self: start;
+  align-self: end;
   border-radius: var(--b-radius);
 }
 
@@ -552,15 +552,15 @@ body {
 
 
 footer {
-  position: fixed;
+  position: relative;
   bottom: 0;
   background-color: #2B2B2B;
-  font-family: ;
+  font-family: "Manuale", sans-serif;
 }
 
 @media (max-height:800px) {
   footer {
-      position: static;
+      position: relative;
   }
   header {
       padding-top: 40px;
@@ -781,11 +781,6 @@ footer {
 
 /* Breakpoints
 --------------------------------------------------------------*/
-@media screen and (min-width: 480px) {
-  .counter__wrapper {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 
 @media screen and (min-width: 768px) {
   .home__wrapper {
@@ -883,29 +878,9 @@ footer {
     transform: scaleX(1);
   }
 
-  .service__wrapper {
-    grid-template-columns: repeat(2, 3fr);
-    align-items: center;
-  }
-
-  .service__content {
-    text-align: initial;
-  }
-
-  .service__card {
-    flex-direction: initial;
-    align-items: center;
-  }
-
-  .service__card:nth-child(2) {
-    margin-right: -4rem;
-  }
-
+  
   .portfolio__wrapper {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .blog__wrapper {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
+ 
